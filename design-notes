@@ -1,0 +1,165 @@
+fsw				= 500 kHz
+Nomin Vin		= 48 V
+Max Vin			= 48 V
+VinRipple		= 0.5V
+Vout			= 36.6 V
+Rd				= ???
+Iled			= 0.45 A
+LED I ripple	= 0.05 A
+L I ripple		= 0.4 A
+UVLO turn on	= 10 V
+UVLO VHys		= 1 V
+Eff				= 0.95
+
+
+# Roff
+
+Take Coff = 1 nF
+
+−(1−(36.6÷(0.95×48))
+--------------------
+1nF+20pF×500kHz×ln(1-(1.24/36.6))
+
+= 11.2kΩ
+
+Closest E96 is 11 kΩ
+
+
+This makes toff
+
+  -(1nF+20pF)*11kΩ*ln(1-(1.24V/36.6V))
+= 387 ns
+
+
+And fsw
+= (1-(36.6V/(0.95*48)))/387ns = 510 kHz
+
+
++-------------------
+| Coff = 1nF
+| Roff = 11 kΩ
++-------------------
+
+
+# Inductor ripple
+
+L = (36.6V*387ns)/.4 = 35 µH
+
+Closest E12 inductor is 33 µH
+
+So really,
+
+ILRipple = 36.6V * 387 ns / 33 µH = 429 mA
+
+
++-------------------
+| L= 36 µH
++-------------------
+
+
+# Average LED current
+
+ILmax = ILED + 1/2*ILripple
+      = .45 + 1/2*.429 = 0.665 A
+
+Take Vadj = 1.24 V
+
+Rsense = 1.24/(5*ILmax)
+       = 1.24/(5*.665) = 0.373 Ω
+
+Closest E96 is... 0.373 Ω
+
+ILed = 1.24/(5*0.373) - (ILripple/2)
+     = 0.45 A
+
++------------------
+| Rsense = 0.373 Ω
++------------------
+
+
+# Output capacitance
+
+Rd is about 10 Ω for this part
+
+Zc = (10Ω*ILEDRipple)/(ILripple-ILEDRipple)
+   = 1.32 Ω
+
+CoMIN = 1/(2π×fsw×Zc)
+      = 236 nF
+
++------------------
+| Co = CoMin * 1.75 = 413 nF
+|    = 500 nF (let's round)
++------------------
+
+
+# Input capacitance
+
+ton = 1/fsw - toff
+    = 1/510kHz - 387ns
+    = 1.6 µs
+
+CinMIN = 0.45A*1.6µs/0.5V = 1.44 µF
+Multiply by 2 for safety, 2.8 µF
+2.7 µF is the closest in the E12.
+
++------------------
+| Cin = 2.7 µF
++------------------
+
+Check that IinRMS is sane:
+
+IinRMS = Iled*fsw*sqrt(ton*toff)
+       = 181 mA
+
+
+# PFET
+
+Minimum voltage rating 48 V
+
+Minimum current rating = Iled * (Vo/(Vin*η)
+= .45 * (36.6/(48*0.95)
+= 361 mA
+
+Chosen part:
+ZXMP7A17KTC
+Rds(on) = 0.16 Ω
+Continuous drain I = 5.7 A
+Vds = 70 V
+Qg = 9.6 nC
+
+ItRMS = ILed*sqrt(36.6V/(48V*0.95) * (1+1/12*(LIripple/Iled)²))
+      = 0.45 * sqrt (36.6V/(48V*0.95) * (1+1/12*(.429/.45)²))
+      = 434 mA
+
+Pt = ItRMS² * Rds(on)
+   = .434² * .16
+   = 69 mW
+
+# Diode
+
+Diodes has to be good for 48 V
+
+Id = (1-(36.6/(48*η)))*Iled
+   = 124 mA
+
+Chosen diode:
+B1100-13-F
+Vf = 0.79 V
+Vrrm = 100 V
+If = 1 A
+Ifsm = 30 A
+
+
+Pd = Vd * Id = 0.124 A * .79
+   = 98 mW
+
+So a 2.5 °C rise, well good
+
+
+# UVLO
+
+Copy UVLO from datasheet.
+
+Ruv2 = 49.9 kΩ
+Rub1 = 6.98 kΩ
