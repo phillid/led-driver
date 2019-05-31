@@ -1,3 +1,5 @@
+# LM3409HV LED Driver Boards
+
 These are Kicad files for a 450 mA constant current LED driver built around
 the LM3409HV, based mostly on the sample schematic in the TI datasheet.
 
@@ -15,4 +17,4 @@ and let the magic smoke out of some components 😜
 * **v1**
 	First, and prototype, revision. Started design in 2017 and finally got
 	around to getting boards manufactured in May 2019 after taking a long
-	break from the project. These are the first boardds to be manufactured.
+	break from the project. These are the first boards to be manufactured.
