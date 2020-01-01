@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L led-driver-rescue:R_Small R4
+L Device:R_Small R4
 U 1 1 59AE9865
 P 5800 3300
 F 0 "R4" H 5830 3320 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "" H 5800 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:D_Schottky_Small_ALT D1
+L Device:D_Schottky_Small_ALT D1
 U 1 1 59AE99D5
 P 5800 4000
 F 0 "D1" V 5750 3850 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "" V 5800 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L led-driver-rescue:L_Small L1
+L Device:L_Small L1
 U 1 1 59AE9B0A
 P 6050 3850
 F 0 "L1" V 6000 3800 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "" H 6050 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L led-driver-rescue:C_Small C3
+L Device:C_Small C3
 U 1 1 59AE9DC4
 P 5650 2900
 F 0 "C3" H 5660 2970 50  0000 L CNN
@@ -58,7 +58,7 @@ F 3 "" H 5650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:C_Small C1
+L Device:C_Small C1
 U 1 1 59AE9F39
 P 2550 3100
 F 0 "C1" H 2560 3170 50  0000 L CNN
@@ -69,7 +69,7 @@ F 3 "" H 2550 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR01
+L power:GND #PWR01
 U 1 1 59AEA1C1
 P 5800 4100
 F 0 "#PWR01" H 5800 3850 50  0001 C CNN
@@ -80,18 +80,18 @@ F 3 "" H 5800 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:CONN_01X02 J4
+L Connector_Generic:Conn_01x02 J4
 U 1 1 59AEA206
-P 6950 3900
-F 0 "J4" H 7100 3950 50  0000 C CNN
-F 1 "LED" H 7100 3850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6950 3900 50  0001 C CNN
-F 3 "" H 6950 3900 50  0001 C CNN
-	1    6950 3900
+P 6950 3850
+F 0 "J4" H 7100 3900 50  0000 C CNN
+F 1 "LED" H 7100 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR02
+L power:GND #PWR02
 U 1 1 59AEA35C
 P 6750 4100
 F 0 "#PWR02" H 6750 3850 50  0001 C CNN
@@ -102,7 +102,7 @@ F 3 "" H 6750 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR03
+L power:GND #PWR03
 U 1 1 59AEA3BF
 P 4350 3750
 F 0 "#PWR03" H 4350 3500 50  0001 C CNN
@@ -113,7 +113,7 @@ F 3 "" H 4350 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:C_Small C2
+L Device:C_Small C2
 U 1 1 59AEA43B
 P 4250 4100
 F 0 "C2" H 4050 4150 50  0000 L CNN
@@ -124,7 +124,7 @@ F 3 "" H 4250 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:R_Small R1
+L Device:R_Small R1
 U 1 1 59AEA5E2
 P 4550 4000
 F 0 "R1" V 4650 3950 50  0000 L CNN
@@ -135,7 +135,7 @@ F 3 "" H 4550 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR04
+L power:GND #PWR04
 U 1 1 59AEA82C
 P 4250 4200
 F 0 "#PWR04" H 4250 3950 50  0001 C CNN
@@ -146,7 +146,7 @@ F 3 "" H 4250 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR05
+L power:GND #PWR05
 U 1 1 59AEABBE
 P 2550 3200
 F 0 "#PWR05" H 2550 2950 50  0001 C CNN
@@ -157,7 +157,7 @@ F 3 "" H 2550 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:R_Small R3
+L Device:R_Small R3
 U 1 1 59AEAE7C
 P 4100 2500
 F 0 "R3" H 4150 2500 50  0000 L CNN
@@ -168,7 +168,7 @@ F 3 "" H 4100 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:R_Small R2
+L Device:R_Small R2
 U 1 1 59AEAEBF
 P 4100 2700
 F 0 "R2" H 4150 2700 50  0000 L CNN
@@ -179,7 +179,7 @@ F 3 "" H 4100 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:VCC #PWR06
+L power:VCC #PWR06
 U 1 1 59AEAF69
 P 4100 2400
 F 0 "#PWR06" H 4100 2250 50  0001 C CNN
@@ -190,7 +190,7 @@ F 3 "" H 4100 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:VCC #PWR07
+L power:VCC #PWR07
 U 1 1 59AEAFA4
 P 5800 3200
 F 0 "#PWR07" H 5800 3050 50  0001 C CNN
@@ -201,7 +201,7 @@ F 3 "" H 5800 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:VCC #PWR08
+L power:VCC #PWR08
 U 1 1 59AEB027
 P 5650 2800
 F 0 "#PWR08" H 5650 2650 50  0001 C CNN
@@ -212,7 +212,7 @@ F 3 "" H 5650 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:VCC #PWR09
+L power:VCC #PWR09
 U 1 1 59AEB4E1
 P 2550 3000
 F 0 "#PWR09" H 2550 2850 50  0001 C CNN
@@ -223,7 +223,7 @@ F 3 "" H 2550 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR010
+L power:GND #PWR010
 U 1 1 59AEB7E3
 P 4100 2800
 F 0 "#PWR010" H 4100 2550 50  0001 C CNN
@@ -234,7 +234,7 @@ F 3 "" H 4100 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:VCC #PWR011
+L power:VCC #PWR011
 U 1 1 59AEBCD0
 P 3700 3500
 F 0 "#PWR011" H 3700 3350 50  0001 C CNN
@@ -245,7 +245,7 @@ F 3 "" H 3700 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR012
+L power:GND #PWR012
 U 1 1 59AEC65E
 P 3500 3100
 F 0 "#PWR012" H 3500 2850 50  0001 C CNN
@@ -256,18 +256,18 @@ F 3 "" H 3500 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:CONN_01X02 J3
+L Connector_Generic:Conn_01x02 J3
 U 1 1 59AEC9E5
-P 3300 3050
-F 0 "J3" H 3450 3100 50  0000 C CNN
-F 1 "ADJ" H 3450 3000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3300 3050 50  0001 C CNN
-F 3 "" H 3300 3050 50  0001 C CNN
-	1    3300 3050
+P 3300 3000
+F 0 "J3" H 3450 3050 50  0000 C CNN
+F 1 "ADJ" H 3450 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3300 3000 50  0001 C CNN
+F 3 "" H 3300 3000 50  0001 C CNN
+	1    3300 3000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:CONN_01X03 J2
+L Connector_Generic:Conn_01x03 J2
 U 1 1 59AED2EC
 P 3500 3600
 F 0 "J2" H 3650 3650 50  0000 C CNN
@@ -278,7 +278,7 @@ F 3 "" H 3500 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR013
+L power:GND #PWR013
 U 1 1 59AED340
 P 3700 3700
 F 0 "#PWR013" H 3700 3450 50  0001 C CNN
@@ -289,7 +289,7 @@ F 3 "" H 3700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:LM3409-RESCUE-led-driver-new U1
+L led-driver:LM3409 U1
 U 1 1 59AEF993
 P 4900 3200
 F 0 "U1" H 4900 3250 60  0000 C CNN
@@ -338,7 +338,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 3000 3900 3000
 $Comp
-L led-driver-rescue:C_Small C4
+L Device:C_Small C4
 U 1 1 59AF72EA
 P 3900 3100
 F 0 "C4" H 3700 3150 50  0000 L CNN
@@ -349,7 +349,7 @@ F 3 "" H 3900 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR014
+L power:GND #PWR014
 U 1 1 59AF7850
 P 3900 3200
 F 0 "#PWR014" H 3900 2950 50  0001 C CNN
@@ -361,7 +361,7 @@ F 3 "" H 3900 3200 50  0001 C CNN
 $EndComp
 Connection ~ 3900 3000
 $Comp
-L led-driver-rescue:C_Small C5
+L Device:C_Small C5
 U 1 1 59AFE85B
 P 6400 3950
 F 0 "C5" H 6410 4020 50  0000 L CNN
@@ -372,7 +372,7 @@ F 3 "" H 6400 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:GND #PWR015
+L power:GND #PWR015
 U 1 1 59AFEC38
 P 6400 4050
 F 0 "#PWR015" H 6400 3800 50  0001 C CNN
@@ -392,7 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 4300 6250 4300
 $Comp
-L led-driver-rescue:GND #PWR016
+L power:GND #PWR016
 U 1 1 59B109B8
 P 4900 3900
 F 0 "#PWR016" H 4900 3650 50  0001 C CNN
@@ -403,7 +403,7 @@ F 3 "" H 4900 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L led-driver-rescue:R_Small R5
+L Device:R_Small R5
 U 1 1 59B11505
 P 6200 3300
 F 0 "R5" H 6230 3320 50  0000 L CNN
@@ -416,7 +416,7 @@ $EndComp
 Connection ~ 5800 3200
 Connection ~ 5800 3400
 $Comp
-L led-driver-rescue:Q_PMOS_GDS Q1
+L Device:Q_PMOS_GDS Q1
 U 1 1 59B006E4
 P 5700 3600
 F 0 "Q1" H 5900 3650 50  0000 L CNN
@@ -441,14 +441,14 @@ Wire Wire Line
 Wire Wire Line
 	5800 3400 6200 3400
 $Comp
-L led-driver-rescue:CONN_01X02 J1
+L Connector_Generic:Conn_01x02 J1
 U 1 1 59AEAC70
-P 1900 3050
-F 0 "J1" H 2050 3100 50  0000 C CNN
-F 1 "48VDC IN" H 2150 3000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1900 3050 50  0001 C CNN
-F 3 "" H 1900 3050 50  0001 C CNN
-	1    1900 3050
+P 1900 3000
+F 0 "J1" H 2050 3050 50  0000 C CNN
+F 1 "48VDC IN" H 2150 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1900 3000 50  0001 C CNN
+F 3 "" H 1900 3000 50  0001 C CNN
+	1    1900 3000
 	-1   0    0    -1  
 $EndComp
 $Comp
