@@ -14,6 +14,11 @@ and let the magic smoke out of some components 😜
 
 ## Version history
 
+* **v1.1** (BOM change)
+	This version changes R2 so that the UVLO is programmed for 43 V turn-on.
+	This is to avoid over-driving the LEDs when the power supply voltage is
+	low enough to make the driver incapable of reaching the peak LED current,
+	which otherwise results in a raising of the average current.
 * **v1**
 	First, and prototype, revision. Started design in 2017 and finally got
 	around to getting boards manufactured in May 2019 after taking a long

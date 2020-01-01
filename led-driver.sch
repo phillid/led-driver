@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:led-driver-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "450 mA 17 W Constant Current LED Driver"
 Date "2017-09-07"
-Rev "1"
+Rev "1.1"
 Comp "David Phillips"
 Comment1 ""
 Comment2 ""
